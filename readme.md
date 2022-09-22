@@ -2,11 +2,17 @@ DOC - TECNOLOGIAS
 ========
 
 I. ESCOPO
+
 II. PORTAIS
+
 III. SITE
+
 IV. CHATBOT
+
 V. BACKUP
+
 VI. IMAGENS
+
 VII. SUPORTE
 
 --------
