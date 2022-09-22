@@ -1,4 +1,5 @@
 DOC - TECNOLOGIAS
+========
 
   I. ESCOPO
  II. PORTAIS
@@ -7,6 +8,7 @@ III. SITE
   V. BACKUP
  VI. IMAGENS
 VII. SUPORTE
+--------
 
 I. ESCOPO DESTA DOCUMENTAÇÃO
 
@@ -44,7 +46,7 @@ Suporte está disponível através do e-mail paulo@leadz.agency ou pelo telefone
 
 
 $project
-========
+
 
 $project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
