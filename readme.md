@@ -18,7 +18,7 @@ VII. SUPORTE
 --------
 
 I. ESCOPO DESTA DOCUMENTAÇÃO
-
+--------
 
 
 
@@ -43,8 +43,10 @@ departamento: 12
 
 
 V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
+--------
 
 VII. SUPORTE
+--------
 
 Suporte está disponível através do e-mail paulo@leadz.agency ou pelo telefone (43) 99969-6665
 
@@ -60,8 +62,7 @@ by providing a basic explanation of how to do it easily.
 
 Look how easy it is to use:
 
-Features
---------
+
 
 - Be awesome
 - Make things faster
