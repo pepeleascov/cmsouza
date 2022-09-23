@@ -21,26 +21,34 @@ I. ESCOPO DESTA DOCUMENTAÇÃO
 --------
 
 
+II. PORTAIS
+--------
 
-Envio de lead para a roleta de atendimento - Novo Vista
+A integração com os portais e a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".
+Os portais integrados são:
 
-EMAIL cmsouza@cmslead.com.br
-GrupoZap
-VivaReal
-ChavesNaMão
+- GrupoZap
+- VivaReal
+- ChavesNaMão
 
+Uma vez que o servidor recebe o e-mail, ele o interpreta e extrai as informações necessárias para cadastrar o lead na roleta.
 Exemplo de lead enviado:
 
-agencia: 1
-veiculo: GrupoZap
-mensagem:  Tenho interesse em visitar  
-nome: Yohanna Gonçalves
-fone: (43) 99170-7226
-email: yohh.goncalves@hotmail.com
-anuncio: 7230
-interesse: locação
-departamento: 12
+    agencia: 1
+    veiculo: GrupoZap
+    mensagem:  Tenho interesse em visitar  
+    nome: Yohanna Gonçalves
+    fone: (43) 99170-7226
+    email: yohh.goncalves@hotmail.com
+    anuncio: 7230
+    interesse: locação
+    departamento: 12
 
+A informação "departamento" segue a seguinte ordem:
+
+CMSOUZA VENDA: 11
+CMSOUZA LOCAÇÃO: 12
+CMSOUZA LANÇAMENTOs: 13
 
 V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 --------
@@ -74,19 +82,3 @@ Install $project by running:
 
     install project
 
-Contribute
-----------
-
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
-
-License
--------
-
-The project is licensed under the BSD license.
