@@ -3,7 +3,7 @@ DOC - TECNOLOGIAS
 
 I. ESCOPO
 
-II. PORTAIS.
+II. PORTAIS
 
 III. SITE
 
@@ -82,3 +82,4 @@ Install $project by running:
 
     install project
 
+Última Atualização - 30/09/2022 - 22h25
