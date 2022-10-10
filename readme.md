@@ -9,9 +9,9 @@ III. SITE
 
 IV. CHATBOT
 
-V. BACKUP
+V. BACKUP - IMÓVEIS
 
-VI. IMAGENS
+VI. BACKUP - IMAGENS
 
 VII. SUPORTE
 
@@ -20,6 +20,7 @@ VII. SUPORTE
 I. ESCOPO DESTA DOCUMENTAÇÃO
 --------
 
+detalhando o funcionamento e configuração dos portais de imóveis, entradas de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN da Leadz.
 
 II. PORTAIS
 --------
@@ -52,8 +53,28 @@ A informação "departamento" segue a seguinte ordem:
 
 Caso seja necessária a integração de um novo portal, favor fazer a solicitação através do e-mail: paulo@leadz.agency
 
+III. SITE
+--------
+
+As entradas de lead através do site são:
+
+- Página do imóvel:
+Os contatos de agendamento de horário para visitação entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com o horário preenchido pelo cliente no campo "Mensagem"
+
+- Barra de contatos:
+Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
+
+IV. CHATBOT
+--------
+
+
 V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 --------
+
+
+V. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
+--------
+
 
 VII. SUPORTE
 --------
@@ -64,4 +85,4 @@ michael@leadz.agency
 
 
 
-Última Atualização - 30/09/2022 - 22h25
+Última Atualização - 10/10/2022 - 17h30
