@@ -37,18 +37,20 @@ Exemplo de lead enviado:
     agencia: 1
     veiculo: GrupoZap
     mensagem:  Tenho interesse em visitar  
-    nome: Yohanna Gonçalves
-    fone: (43) 99170-7226
-    email: yohh.goncalves@hotmail.com
+    nome: --nome do contato--
+    fone: (43) 99170-####
+    email: yohh.###@hotmail.com
     anuncio: 7230
     interesse: locação
     departamento: 12
 
 A informação "departamento" segue a seguinte ordem:
 
-CMSOUZA VENDA: 11
-CMSOUZA LOCAÇÃO: 12
-CMSOUZA LANÇAMENTOs: 13
+    CMSOUZA VENDA: 11
+    CMSOUZA LOCAÇÃO: 12
+    CMSOUZA LANÇAMENTOS: 13
+
+Caso seja necessária a integração de um novo portal, favor fazer a solicitação através do e-mail: paulo@leadz.agency
 
 V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 --------
@@ -56,30 +58,10 @@ V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 VII. SUPORTE
 --------
 
-Suporte está disponível através do e-mail paulo@leadz.agency ou pelo telefone (43) 99969-6665
+paulo@leadz.agency
+(43) 99969-6665
+michael@leadz.agency
 
 
-
-
-
-$project
-
-
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-
-
-- Be awesome
-- Make things faster
-
-Installation
-------------
-
-Install $project by running:
-
-    install project
 
 Última Atualização - 30/09/2022 - 22h25
