@@ -126,6 +126,7 @@ stateDiagram
     3: Processamento dos Dados
     4: Envio do Lead
     direction LR
+    [*] --> 1
     1 --> 2
     2 --> 3
     3 --> 4
