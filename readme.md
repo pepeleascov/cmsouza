@@ -128,9 +128,13 @@ stateDiagram
     3: Processamento dos Dados
     4: Envio do Lead
     direction LR
+    
     state 1 {
-        v
-        l
+    state fork_state <<fork>>
+        [*] --> fork_state
+        fork_state --> v
+        fork_state --> l
+    state join_state <<join>>
     }
     1 --> 2
     2 --> 3
