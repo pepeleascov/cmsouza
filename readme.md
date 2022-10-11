@@ -22,7 +22,7 @@ VII. SUPORTE
 
 # I. ESCOPO DESTA DOCUMENTAÇÃO
 
-Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN[^1]. da Leadz.
+Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN da Leadz[^1].
 
 # II. PORTAIS
 
@@ -134,3 +134,8 @@ michael@leadz.agency
 
 [1^]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
