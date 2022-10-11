@@ -82,7 +82,7 @@ O fluxo de atendimento funciona da seguinte forma:
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
 Exemplo de lead enviado através do chatbot:
-```json
+```
     nome: --nome do contato--
     fone: 5543#####
     mensagem: Olá! Gostaria de falar com um corretor sobre o imóvel 8746
@@ -126,7 +126,6 @@ sequenceDiagram
     Cliente-->>Chatbot: Great!
     Chatbot->>Cliente: Hello John, how are you?
     Cliente-->>Chatbot: Great!
-    Note right of John: Rational thoughts <br/>prevail!
     end
 ```
 
