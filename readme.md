@@ -1,8 +1,6 @@
-DOCUMENTAÇÃO
-========
+# DOCUMENTAÇÃO
+# TECNOLOGIAS LEADZ - CMSOUZA
 
-TECNOLOGIAS LEADZ - CMSOUZA
-========
 
 I. ESCOPO
 
@@ -17,6 +15,8 @@ V. BACKUP - IMÓVEIS
 VI. BACKUP - IMAGENS
 
 VII. SUPORTE
+
+IV. NOTAS
 
 --------
 
@@ -116,7 +116,7 @@ As informações dos imóveis salvas são as seguintes:
 
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 
-CDN (Content Delivery Network / Rede de entrega de conteúdo)[^2]
+CDN (Content Delivery Network / Rede de entrega de conteúdo)[^1]
 
 250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN do Vista
 
@@ -132,8 +132,7 @@ michael@leadz.agency
 
 ### NOTAS
 
-[1^]: CDN - Content Delivery Network / Rede de entrega de conteúdo
-
+[^1]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 [^2]: Every new line should be prefixed with 2 spaces.  
   This allows you to have a footnote with multiple lines.
 [^note]:
