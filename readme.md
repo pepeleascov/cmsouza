@@ -81,6 +81,32 @@ O fluxo de atendimento funciona da seguinte forma:
     4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
+```mermaid
+stateDiagram
+    1: Finalidade do Atendimento
+    v: Venda
+    l: Locação
+    2: Nome do Cliente
+    3: Processamento dos Dados
+    4: Envio do Lead
+    direction LR
+    
+    [*] --> 1
+    state 1 {
+    state fork_state <<fork>>
+    direction LR
+        fork_state
+        fork_state --> v
+        fork_state --> l
+    state join_state <<join>>
+    v --> join_state
+    l --> join_state
+    }
+    1 --> 2
+    2 --> 3
+    3 --> 4
+```
+
 Exemplo de lead enviado através do chatbot:
 ```
 nome: --nome do contato--
@@ -119,32 +145,7 @@ paulo@leadz.agency
   michael@leadz.agency
 
 
-```mermaid
-stateDiagram
-    1: Finalidade do Atendimento
-    v: Venda
-    l: Locação
-    2: Nome do Cliente
-    3: Processamento dos Dados
-    4: Envio do Lead
-    direction LR
-    
-    [*] --> 1
-    state 1 {
-    state fork_state <<fork>>
-    direction LR
-        fork_state
-        fork_state --> v
-        fork_state --> l
-    state join_state <<join>>
-    v --> join_state
-    l --> join_state
-    }
-    1 --> 2
-    2 --> 3
-    3 --> 4
-    4 --> [*]
-```
+
 
 
 #### Última Atualização
