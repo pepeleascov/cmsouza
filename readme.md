@@ -131,10 +131,13 @@ stateDiagram
     
     state 1 {
     state fork_state <<fork>>
+    direction LR
         [*] --> fork_state
         fork_state --> v
         fork_state --> l
     state join_state <<join>>
+    v --> join_state
+    l --> join_state
     }
     1 --> 2
     2 --> 3
