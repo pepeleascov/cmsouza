@@ -86,7 +86,7 @@ O nosso sistema, em conjunto com o chatbot, armazena as mensagens recebidas dura
 O fluxo de atendimento funciona da seguinte forma:
 
     Início do atendimento --> 
-    usuário seleciona a finalidade do atendimento entre "Corretor de Venda" ou "Corretor de Locação" (isso indica a informação do departamento) --> 
+    usuário seleciona a finalidade do atendimento, que indica a informação do departamento --> 
     usuário responde o nome --> 
     O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome" --> 
     Após, o nosso sistema faz o envio do lead para a roleta do Vista.
@@ -110,7 +110,11 @@ O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista,
 
 As informações dos imóveis salvas são as seguintes:
 
-    Status, Finalidade, Categoria, Codigo, BairroComercial, Bairro, Empreendimento, Cidade, ValorVenda, ValorLocacao, Dormitorios, Caracteristicas, InfraEstrutura, CodigoEmpreendimento, BanheiroSocialQtd, Vagas, AreaPrivativa, AreaTotal, ValorCondominio, DescricaoWeb, DescricaoEmpreendimento, Imediacoes, DestaqueWeb, SuperDestaqueWeb, Lancamento, Tour360, Corretor, TotalBanheiros, Suites, Endereco, Numero, UF, FotoDestaque
+    Status, Finalidade, Categoria, Codigo, BairroComercial, Bairro, Empreendimento, Cidade, 
+    ValorVenda, ValorLocacao, Dormitorios, Caracteristicas, InfraEstrutura, CodigoEmpreendimento,
+    BanheiroSocialQtd, Vagas, AreaPrivativa, AreaTotal, ValorCondominio, DescricaoWeb, 
+    DescricaoEmpreendimento, Imediacoes, DestaqueWeb, SuperDestaqueWeb, Lancamento, Tour360, 
+    Corretor, TotalBanheiros, Suites, Endereco, Numero, UF, FotoDestaque
 
 
 V. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
