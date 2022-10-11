@@ -22,7 +22,7 @@ VII. SUPORTE
 
 # I. ESCOPO DESTA DOCUMENTAÇÃO
 
-Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN[^1] da Leadz.
+Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN[^1]. da Leadz.
 
 # II. PORTAIS
 
@@ -128,6 +128,6 @@ michael@leadz.agency
 
 ### NOTAS
 
-[1^] CDN - Content Delivery Network / Rede de entrega de conteúdo
+[1^]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 
 Última Atualização - 11/10/2022
