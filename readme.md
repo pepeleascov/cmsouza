@@ -21,12 +21,10 @@ VII. SUPORTE
 --------
 
 # I. ESCOPO DESTA DOCUMENTAÇÃO
---------
 
 Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN da Leadz.
 
 # II. PORTAIS
---------
 
 A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".
 Os portais integrados são informados com as seguintes mídias de origem:
@@ -57,7 +55,6 @@ A informação "departamento" segue a seguinte ordem:
 Caso seja necessária a integração de um novo portal, favor fazer a solicitação através do e-mail: paulo@leadz.agency
 
 # III. SITE
---------
 
 As entradas de lead através do site são:
 
@@ -72,7 +69,6 @@ Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de con
 Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site-Whatsapp", e com a mensagem preenchida pelo cliente no campo "Mensagem".
 
 # IV. CHATBOT
---------
 
 Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista.
 Para os contatos provenientes dos portais, nosso sistema identifica os links dentro das mensagens e classifica a mídia de origem de acordo com o link do portal.
@@ -105,7 +101,6 @@ Exemplo de lead enviado através do chatbot:
 
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
---------
 
 A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM Vista, como por exemplo, cadastro de clientes e negócios.
 O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista, que constantemente apresenta instabilidades. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza
@@ -120,14 +115,12 @@ As informações dos imóveis salvas são as seguintes:
 
 
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
---------
 
 CDN (Content Delivery Network / Rede de entrega de conteúdo)
 
 250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN do Vista
 
 # VII. SUPORTE
---------
 
 paulo@leadz.agency
 (43) 99969-6665
