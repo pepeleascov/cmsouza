@@ -122,12 +122,21 @@ paulo@leadz.agency
 journey
     title Fluxo Chatbot
     section Go to work
-      Make tea
-      Go upstairs
-      Do work
+      Make tea: 0
+      Go upstairs: 0
+      Do work: 0
     section Go home
-      Go downstairs
-      Sit down
+      Go downstairs: 0
+      Sit down: 0
+```
+
+```mermaid
+stateDiagram
+    direction LR
+    [*] --> Finalidade do Atendimento
+    Finalidade do Atendimento --> Nome do Cliente
+    Nome do Cliente --> Processamento dos Dados
+    Processamento dos Dados --> Envio do Lead
 ```
 
 
