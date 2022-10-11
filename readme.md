@@ -1,21 +1,13 @@
 # DOCUMENTAÇÃO
 # TECNOLOGIAS LEADZ - CMSOUZA
 
-
 I. ESCOPO
-
 II. PORTAIS
-
 III. SITE
-
 IV. CHATBOT
-
 V. BACKUP - IMÓVEIS
-
 VI. BACKUP - IMAGENS
-
 VII. SUPORTE
-
 IV. NOTAS
 
 --------
@@ -125,6 +117,18 @@ CDN (Content Delivery Network / Rede de entrega de conteúdo)[^1]
 paulo@leadz.agency
   (43) 99969-6665
   michael@leadz.agency
+
+```mermaid
+sequenceDiagram
+    participant Chatbot
+    participant Cliente
+    Chatbot->>Cliente: Hello John, how are you?
+    Cliente-->>Chatbot: Great!
+    Chatbot->>Cliente: Hello John, how are you?
+    Cliente-->>Chatbot: Great!
+    Note right of John: Rational thoughts <br/>prevail!
+    end
+```
 
 
 #### Última Atualização
