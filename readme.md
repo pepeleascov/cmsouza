@@ -83,13 +83,13 @@ O fluxo de atendimento funciona da seguinte forma:
 
 Exemplo de lead enviado através do chatbot:
 ```
-    nome: --nome do contato--
-    fone: 5543#####
-    mensagem: Olá! Gostaria de falar com um corretor sobre o imóvel 8746
-    veiculo: Site-Whatsapp
-    interesse: Locação
-    departamento: 12
-    agencia:1
+nome: --nome do contato--
+fone: 5543#####
+mensagem: Olá! Gostaria de falar com um corretor sobre o imóvel 8746
+veiculo: Site-Whatsapp
+interesse: Locação
+departamento: 12
+agencia:1
 ```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
@@ -119,13 +119,15 @@ paulo@leadz.agency
   michael@leadz.agency
 
 ```mermaid
-sequenceDiagram
-    participant Chatbot
-    participant Cliente
-    Chatbot->>Cliente: Hello John, how are you?
-    Cliente-->>Chatbot: Great!
-    Chatbot->>Cliente: Hello John, how are you?
-    Cliente-->>Chatbot: Great!
+journey
+    title Fluxo Chatbot
+    section Go to work
+      Make tea: 5
+      Go upstairs: 3
+      Do work: 1
+    section Go home
+      Go downstairs: 5
+      Sit down: 5
 ```
 
 
