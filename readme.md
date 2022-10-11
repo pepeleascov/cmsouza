@@ -2,13 +2,13 @@
 # TECNOLOGIAS LEADZ - CMSOUZA
 
 I. ESCOPO
-II. PORTAIS
-III. SITE
-IV. CHATBOT
-V. BACKUP - IMÓVEIS
-VI. BACKUP - IMAGENS
-VII. SUPORTE
-IV. NOTAS
+  II. PORTAIS
+  III. SITE
+  IV. CHATBOT
+  V. BACKUP - IMÓVEIS
+  VI. BACKUP - IMAGENS
+  VII. SUPORTE
+  IV. NOTAS
 
 --------
 
@@ -126,7 +126,6 @@ sequenceDiagram
     Cliente-->>Chatbot: Great!
     Chatbot->>Cliente: Hello John, how are you?
     Cliente-->>Chatbot: Great!
-    end
 ```
 
 
