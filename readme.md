@@ -116,7 +116,7 @@ As informações dos imóveis salvas são as seguintes:
 
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 
-CDN (Content Delivery Network / Rede de entrega de conteúdo)
+CDN (Content Delivery Network / Rede de entrega de conteúdo)[^2]
 
 250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN do Vista
 
