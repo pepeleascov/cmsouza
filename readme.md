@@ -7,7 +7,7 @@
 [  V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
 [ VI. OTIMIZAÇÃO - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-c%C3%B3pia-e-otimiza%C3%A7%C3%A3o-das-imagens-dos-im%C3%B3veis)<br />
 [VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vii-suporte)<br />
-[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vii-suporte)<br />
+[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#notas)<br />
 
 --------
 
