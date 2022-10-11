@@ -1,13 +1,13 @@
 # TECNOLOGIAS LEADZ - CMSOUZA
 
-[  I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)<br />
-[ II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)<br />
+[⠀⠀I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)<br />
+[⠀II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)<br />
 [III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)<br />
-[ IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
-[  V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
-[ VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[⠀IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
+[⠀⠀V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
+[⠀VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 [VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
-[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[⠀IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 
 --------
 
@@ -17,7 +17,7 @@ Detalha o funcionamento e configuração dos portais de imóveis, campos de entr
 
 # II. PORTAIS
 
-A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".[^cmslead] <br />
+A integração com os portais com a roleta de atendimento do Vista[^vista] funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".[^cmslead] <br />
 Os portais integrados são informados com as seguintes mídias de origem:
 
 - GrupoZap
@@ -111,6 +111,7 @@ stateDiagram
 ```
 
 Exemplo de lead enviado através do chatbot:
+
 ```
 nome: --nome do contato--
 fone: 5543#####
@@ -120,6 +121,8 @@ interesse: Locação
 departamento: 12
 agencia:1
 ```
+
+*O imóvel de interesse, neste caso, não é enviado separadamente para o Vista
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
@@ -137,7 +140,6 @@ As informações dos imóveis salvas são as seguintes:
 
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 
-CDN (Content Delivery Network / Rede de entrega de conteúdo)[^1]
 
 250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN do Vista
 
@@ -158,4 +160,5 @@ paulo@leadz.agency
 
 [^chatbot]: Chatbot - Sendpulse
 [^cdn]: CDN - Content Delivery Network / Rede de entrega de conteúdo
-[^cmslead] CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
+[^cmslead]: CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
+[^vista]: [NovoVista](http://www.vistasoft.com.br/)
