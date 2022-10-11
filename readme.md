@@ -121,11 +121,15 @@ paulo@leadz.agency
 
 ```mermaid
 stateDiagram
+    1: Finalidade do Atendimento
+    2: Nome do Cliente
+    3: Processamento dos Dados
+    4: Envio do Lead
     direction LR
-    [*] --> 'Finalidade do Atendimento'
-    'Finalidade do Atendimento' --> 'Nome do Cliente'
-    'Nome do Cliente' --> 'Processamento dos Dados'
-    'Processamento dos Dados' --> 'Envio do Lead'
+    [*] --> 1
+    1 --> 2
+    2 --> 3
+    3 --> 4
 ```
 
 
