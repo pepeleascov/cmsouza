@@ -122,12 +122,12 @@ paulo@leadz.agency
 journey
     title Fluxo Chatbot
     section Go to work
-      Make tea: 5
-      Go upstairs: 3
-      Do work: 1
+      Make tea
+      Go upstairs
+      Do work
     section Go home
-      Go downstairs: 5
-      Sit down: 5
+      Go downstairs
+      Sit down
 ```
 
 
