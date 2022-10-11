@@ -85,7 +85,11 @@ O nosso sistema, em conjunto com o chatbot, armazena as mensagens recebidas dura
 
 O fluxo de atendimento funciona da seguinte forma:
 
-    Início do atendimento --> usuário seleciona a finalidade do atendimento entre "Corretor de Venda" ou "Corretor de Locação" (isso indica a informação do departamento) --> usuário responde o nome --> O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome" --> Após, o nosso sistema faz o envio do lead para a roleta do Vista.
+    Início do atendimento --> 
+    usuário seleciona a finalidade do atendimento entre "Corretor de Venda" ou "Corretor de Locação" (isso indica a informação do departamento) --> 
+    usuário responde o nome --> 
+    O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome" --> 
+    Após, o nosso sistema faz o envio do lead para a roleta do Vista.
 
 Exemplo de lead enviado através do chatbot:
 
