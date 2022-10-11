@@ -1,13 +1,13 @@
 # TECNOLOGIAS LEADZ - CMSOUZA
 
-[⠀⠀I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)<br />
-[⠀II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)<br />
+[  I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)<br />
+[ II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)<br />
 [III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)<br />
-[⠀IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
-[⠀⠀V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
-[⠀VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[ IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
+[  V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
+[ VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 [VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
-[⠀IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 
 --------
 
@@ -25,7 +25,7 @@ Os portais integrados são informados com as seguintes mídias de origem:
 - ChavesNaMão
 
 Uma vez que o servidor Leadz recebe o e-mail, ele o interpreta e extrai as informações necessárias para cadastrar o lead na roleta.
-Exemplo de lead interpretado e enviado para o Vista:
+Exemplo de lead interpretado e enviado para o Vista[^vista]:
 
     agencia: 1
     veiculo: GrupoZap
@@ -51,17 +51,17 @@ As entradas de lead através do site são:
 
 - Página do imóvel - Agendamento de Visitas:
 
-Os contatos de agendamento de horário para visitação entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com o horário preenchido pelo cliente no campo "Mensagem".
+Os contatos de agendamento de horário para visitação entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site" e com o horário preenchido pelo cliente no campo "Mensagem".
 
 - Barra de contatos:
 
-Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
+Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
 
-Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site-Whatsapp", e com a mensagem preenchida pelo cliente no campo "Mensagem".
+Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem preenchida pelo cliente no campo "Mensagem".
 
 # IV. CHATBOT
 
-Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista.
+Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista].
 Para os contatos provenientes dos portais, nosso sistema identifica os links dentro das mensagens e classifica a mídia de origem de acordo com o link do portal.
 Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados para a roleta de atendimento com uma das seguintes mídias de origem:
 
@@ -122,12 +122,12 @@ departamento: 12
 agencia:1
 ```
 
-*O imóvel de interesse, neste caso, não é enviado separadamente para o Vista
+*O imóvel de interesse, neste caso, não é enviado separadamente para o Vista[^vista]
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
-A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM Vista, como por exemplo, cadastro de clientes e negócios.
-O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista, que constantemente apresenta instabilidades. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza
+A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM Vista[^vista], como por exemplo, cadastro de clientes e negócios.
+O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista[^vista], que constantemente apresenta instabilidades. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza
 
 As informações dos imóveis salvas são as seguintes:
 
@@ -141,7 +141,7 @@ As informações dos imóveis salvas são as seguintes:
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 
 
-250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN do Vista
+250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN[^cdn] do Vista[^vista]
 
 # VII. SUPORTE
 
