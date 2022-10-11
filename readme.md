@@ -1,4 +1,5 @@
-DOC - TECNOLOGIAS
+DOCUMENTAÇÃO
+TECNOLOGIAS LEADZ - CMSOUZA
 ========
 
 I. ESCOPO
@@ -26,14 +27,14 @@ II. PORTAIS
 --------
 
 A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".
-Os portais integrados são:
+Os portais integrados são informados com as seguintes mídias de origem:
 
 - GrupoZap
 - VivaReal
 - ChavesNaMão
 
 Uma vez que o servidor Leadz recebe o e-mail, ele o interpreta e extrai as informações necessárias para cadastrar o lead na roleta.
-Exemplo de lead enviado:
+Exemplo de lead interpretado e enviado para o Vista:
 
     agencia: 1
     veiculo: GrupoZap
@@ -58,18 +59,20 @@ III. SITE
 
 As entradas de lead através do site são:
 
-- Página do imóvel:
+- Página do imóvel - Agendamento de Visitas:
 
-Os contatos de agendamento de horário para visitação entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com o horário preenchido pelo cliente no campo "Mensagem"
+Os contatos de agendamento de horário para visitação entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com o horário preenchido pelo cliente no campo "Mensagem".
 
 - Barra de contatos:
 
 Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
 
+Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista com a mídia de origem definida como "Site-Whatsapp", e com a mensagem preenchida pelo cliente no campo "Mensagem".
+
 IV. CHATBOT
 --------
 
-Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", que faz a interação do atendimento dos leads do WhatsApp e os envia para a roleta de atendimento do Vista.
+Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista.
 Para os contatos provenientes dos portais, nosso sistema identifica os links dentro das mensagens e classifica a mídia de origem de acordo com o link do portal.
 Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados para a roleta de atendimento com uma das seguintes mídias de origem:
 
@@ -77,12 +80,12 @@ Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados p
     VivaReal-Whatsapp
     ChavesNaMão-Whatsapp
 
-Os outros leads provenientes do site da CMSouza (barra de contatos e agendamento de visita) são classificados com a mídia de origem "Site-Whatsapp".
-O nosso sistema, em conjunto com o chatbot, armazena as mensagens recebidas e envia todas elas no campo "mensagem" do lead, quando é enviado para a roleta de atendimento.
+Os outros contatos provenientes da opção "Atendimento por WhatsApp" da barra de contatos do site da CMSouza são classificados com a mídia de origem "Site-Whatsapp".
+O nosso sistema, em conjunto com o chatbot, armazena as mensagens recebidas durante a interação do chat e ao final as envia no campo "mensagem" do lead a ser cadastrado na roleta de atendimento.
 
 O fluxo de atendimento funciona da seguinte forma:
 
-Início do atendimento > usuário seleciona de finalidade ("Corretor de Venda" ou "Corretor de Locação" (isso indica a informação do departamento) > usuário responde o nome > O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome" > Após, o nosso sistema faz o envio do lead para a roleta do Vista.
+    Início do atendimento --> usuário seleciona a finalidade do atendimento entre "Corretor de Venda" ou "Corretor de Locação" (isso indica a informação do departamento) --> usuário responde o nome --> O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome" --> Após, o nosso sistema faz o envio do lead para a roleta do Vista.
 
 Exemplo de lead enviado através do chatbot:
 
@@ -98,10 +101,20 @@ Exemplo de lead enviado através do chatbot:
 V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 --------
 
+A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM Vista, como por exemplo, cadastro de clientes e negócios.
+O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista, que constantemente apresenta instabilidades. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza
+
+As informações dos imóveis salvas são as seguintes:
+
+    Status, Finalidade, Categoria, Codigo, BairroComercial, Bairro, Empreendimento, Cidade, ValorVenda, ValorLocacao, Dormitorios, Caracteristicas, InfraEstrutura, CodigoEmpreendimento, BanheiroSocialQtd, Vagas, AreaPrivativa, AreaTotal, ValorCondominio, DescricaoWeb, DescricaoEmpreendimento, Imediacoes, DestaqueWeb, SuperDestaqueWeb, Lancamento, Tour360, Corretor, TotalBanheiros, Suites, Endereco, Numero, UF, FotoDestaque
+
 
 V. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 --------
 
+CDN (Content Delivery Network / Rede de entrega de conteúdo)
+
+250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN do Vista
 
 VII. SUPORTE
 --------
@@ -112,4 +125,4 @@ michael@leadz.agency
 
 
 
-Última Atualização - 10/10/2022 - 17h30
+Última Atualização - 11/10/2022 - 17h30
