@@ -24,7 +24,7 @@ Os portais integrados são informados com as seguintes mídias de origem:
 - VivaReal
 - ChavesNaMão
 
-Uma vez que o servidor Leadz recebe o e-mail, ele o interpreta e extrai as informações necessárias para cadastrar o lead na roleta.
+Uma vez que o servidor Leadz recebe o e-mail, ele o interpreta e extrai as informações necessárias para cadastrar o lead na roleta. <br />
 Exemplo de lead interpretado e enviado para o Vista[^vista]:
 
     agencia: 1
@@ -61,7 +61,7 @@ Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de conta
 
 # IV. CHATBOT
 
-Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista].
+Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista]. <br />
 Para os contatos provenientes dos portais, nosso sistema identifica os links dentro das mensagens e classifica a mídia de origem de acordo com o link do portal.
 Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados para a roleta de atendimento com uma das seguintes mídias de origem:
 
@@ -69,7 +69,7 @@ Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados p
     VivaReal-Whatsapp
     ChavesNaMão-Whatsapp
 
-Os outros contatos provenientes da opção "Atendimento por WhatsApp" da barra de contatos do site da CMSouza são classificados com a mídia de origem "Site-Whatsapp".
+Os outros contatos provenientes da opção "Atendimento por WhatsApp" da barra de contatos do site da CMSouza são classificados com a mídia de origem "Site-Whatsapp". <br />
 O nosso sistema, em conjunto com o chatbot, armazena as mensagens recebidas durante a interação do chat e ao final as envia no campo "mensagem" do lead a ser cadastrado na roleta de atendimento.
 
 O fluxo de atendimento funciona da seguinte forma:
@@ -126,7 +126,7 @@ agencia:1
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
-A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM Vista[^vista], como por exemplo, cadastro de clientes e negócios.
+A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM NovoVista[^vista], como por exemplo, cadastro de clientes e negócios. <br />
 O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista[^vista], que constantemente apresenta instabilidades. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza
 
 As informações dos imóveis salvas são as seguintes:
@@ -140,17 +140,20 @@ As informações dos imóveis salvas são as seguintes:
 
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 
-
-250ms a 300ms, 60ms, 75% a 80% mas rápido, ou seja, um ganho de velocidade de cerca de 4x em comparação ao CDN[^cdn] do Vista[^vista]
+As fotos dos imóveis também passam por uma otimização em nosso servidor, e, posteriormente, é replicada para o nosso CDN[^cdn]. <br />
+Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, de cerca de 300ms[^ms] para cerca de 60ms[^ms]. Isso equivale a um ganho de velocidade de 4x em comparação ao CDN[^cdn] do Vista[^vista].
 
 # VII. SUPORTE
 
-paulo@leadz.agency
-  (43) 99969-6665
-  michael@leadz.agency
+[paulo@leadz.agency](mailto:paulo@leadz.agency) <br />
+(43) 99969-6665 <br />
+[michael@leadz.agency](mailto:michael@leadz.agency) <br />
 
-
-
+##
+Itens à fazer:
+- [ ] Revisão III
+- [ ] Revisão VI
+- [ ] Desenvolver ferramenta de pesquisa e relatório de leads
 
 
 #### Última Atualização
@@ -161,4 +164,5 @@ paulo@leadz.agency
 [^chatbot]: Chatbot - Sendpulse
 [^cdn]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 [^cmslead]: CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
+[^ms]: milisegundos
 [^vista]: [NovoVista](http://www.vistasoft.com.br/)
