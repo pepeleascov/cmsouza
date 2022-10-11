@@ -129,10 +129,11 @@ stateDiagram
     4: Envio do Lead
     direction LR
     
+    [*] --> 1
     state 1 {
     state fork_state <<fork>>
     direction LR
-        [*] --> fork_state
+        fork_state
         fork_state --> v
         fork_state --> l
     state join_state <<join>>
