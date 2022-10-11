@@ -2,13 +2,13 @@
 # TECNOLOGIAS LEADZ - CMSOUZA
 
 [I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)
-     [II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)
-     [III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)
-     [IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)
-     [V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)
-     [VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)
-     [VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)
-     [IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)
+[II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)
+[III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)
+[IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)
+[V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)
+[VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)
+[VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)
+[IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)
 
 --------
 
@@ -19,6 +19,7 @@ Detalha o funcionamento e configuração dos portais de imóveis, campos de entr
 # II. PORTAIS
 
 A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".
+
 Os portais integrados são informados com as seguintes mídias de origem:
 
 - GrupoZap
