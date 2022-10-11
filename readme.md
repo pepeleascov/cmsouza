@@ -1,24 +1,23 @@
-# DOCUMENTAÇÃO
 # TECNOLOGIAS LEADZ - CMSOUZA
 
-[I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)
-[II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)<br />
+[  I. ESCOPO](https://github.com/pepeleascov/cmsouza#i-escopo-desta-documenta%C3%A7%C3%A3o)<br />
+[ II. PORTAIS](https://github.com/pepeleascov/cmsouza#ii-portais)<br />
 [III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)<br />
-[IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
-[V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
-[VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[ IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
+[  V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
+[ VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 [VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
-[IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 
 --------
 
 # I. ESCOPO DESTA DOCUMENTAÇÃO
 
-Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot, backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN da Leadz[^1].
+Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot[^chatbot], backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN da Leadz[^cdn].
 
 # II. PORTAIS
 
-A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br". <br />
+A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".[^cmslead] <br />
 Os portais integrados são informados com as seguintes mídias de origem:
 
 - GrupoZap
@@ -157,9 +156,6 @@ paulo@leadz.agency
 
 #### NOTAS
 
-[^1]: CDN - Content Delivery Network / Rede de entrega de conteúdo
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
+[^chatbot]: Chatbot - Sendpulse
+[^cdn]: CDN - Content Delivery Network / Rede de entrega de conteúdo
+[^cmslead] CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
