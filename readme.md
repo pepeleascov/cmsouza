@@ -5,7 +5,7 @@
 [III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)<br />
 [ IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
 [  V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
-[ VI. BACKUP - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[ VI. OTIMIZAÇÃO - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 [VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 [ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
 
@@ -138,7 +138,7 @@ As informações dos imóveis que são salvas são as seguintes:
     Corretor, TotalBanheiros, Suites, Endereco, Numero, UF, FotoDestaque
 
 
-# VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
+# VI. CÓPIA E OTIMIZAÇÃO DAS IMAGENS DOS IMÓVEIS
 
 As fotos dos imóveis também passam por uma otimização em nosso servidor, e, posteriormente, é replicada para o nosso CDN[^cdn]. <br />
 Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, indo de ~300ms[^~] [^ms] para cerca de ~60ms[^ms]. Isso equivale a um carregamento de imagens 4 vezes mais rápida em comparação ao CDN[^cdn] do Vista[^vista].
