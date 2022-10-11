@@ -126,35 +126,11 @@ paulo@leadz.agency
 (43) 99969-6665
 michael@leadz.agency
 
+
+#### Última Atualização
+11/10/2022
+
 ### NOTAS
 
 [1^]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 
-Última Atualização - 11/10/2022
-
-
-<details><summary>CLICK ME</summary>
-<p>
-
-#### We can hide anything, even code!
-
-```ruby
-   puts "Hello World"
-```
-
-</p>
-</details>
-
-
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
