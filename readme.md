@@ -18,8 +18,7 @@ Detalha o funcionamento e configuração dos portais de imóveis, campos de entr
 
 # II. PORTAIS
 
-A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".
-
+A integração com os portais com a roleta de atendimento do Vista funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br". <br />
 Os portais integrados são informados com as seguintes mídias de origem:
 
 - GrupoZap
