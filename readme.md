@@ -93,7 +93,7 @@ stateDiagram
     5: Vista
     direction LR
     
-    [*] --> 1
+    Início --> 1
     state 1 {
     state fork_state <<fork>>
     direction LR
