@@ -131,3 +131,16 @@ michael@leadz.agency
 [1^]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 
 Última Atualização - 11/10/2022
+
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>
