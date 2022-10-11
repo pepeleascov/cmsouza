@@ -122,11 +122,16 @@ paulo@leadz.agency
 ```mermaid
 stateDiagram
     1: Finalidade do Atendimento
+    v: Venda
+    l: Locação
     2: Nome do Cliente
     3: Processamento dos Dados
     4: Envio do Lead
     direction LR
-    [*] --> 1
+    state 1 {
+        v
+        l
+    }
     1 --> 2
     2 --> 3
     3 --> 4
