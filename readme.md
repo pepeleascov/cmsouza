@@ -18,12 +18,6 @@ Detalha o funcionamento e configuração dos portais de imóveis, campos de entr
 # II. PORTAIS
 
 A integração com os portais com a roleta de atendimento do Vista[^vista] funciona configurando o envio de lead do portal para o e-mail "cmsouza@cmslead.com.br".[^cmslead] <br />
-Os portais integrados são informados com as seguintes mídias de origem:
-
-- GrupoZap
-- VivaReal
-- ChavesNaMão
-
 Uma vez que o servidor Leadz recebe o e-mail, ele o interpreta e extrai as informações necessárias para cadastrar o lead na roleta. <br />
 Exemplo de lead interpretado e enviado para o Vista[^vista]:
 
@@ -43,6 +37,12 @@ A informação "departamento" segue a seguinte ordem:
     CMSOUZA LOCAÇÃO: 12
     CMSOUZA LANÇAMENTOS: 13
 
+Os portais integrados são informados ao Vista[^vista] com as seguintes mídias de origem, sem espaços:
+
+- GrupoZap
+- VivaReal
+- ChavesNaMão
+
 Caso seja necessária a integração de um novo portal, favor fazer a solicitação através do e-mail: paulo@leadz.agency
 
 # III. SITE
@@ -57,7 +57,7 @@ Os contatos de agendamento de horário para visitação entram para a roleta de 
 
 Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
 
-Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem preenchida pelo cliente no campo "Mensagem".
+Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot[^chatbot] (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem enviada pelo cliente incluída no campo "mensagem".
 
 # IV. CHATBOT
 
@@ -127,9 +127,9 @@ agencia:1
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
 A cópia/backup do banco de imóveis salva apenas as informações que são pertinentes ao funcionamento do site. O backup não salva o banco de dados dos imóveis em sua totalidade e não tem acesso à outras informações do CRM NovoVista[^vista], como por exemplo, cadastro de clientes e negócios. <br />
-O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista[^vista], que constantemente apresenta instabilidades. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza
+O intuito dessa cópia é para que o site não dependa do sistema do Novo Vista[^vista], que esporadicamente apresenta instabilidades e lentidão. A cópia ocorre todos os dias, de hora em hora. Portanto, as atualizações de descrição e o cadastro de novos imóveis pode levar até uma hora para estarem disponíveis no site da CMSouza.
 
-As informações dos imóveis salvas são as seguintes:
+As informações dos imóveis que são salvas são as seguintes:
 
     Status, Finalidade, Categoria, Codigo, BairroComercial, Bairro, Empreendimento, Cidade, 
     ValorVenda, ValorLocacao, Dormitorios, Caracteristicas, InfraEstrutura, CodigoEmpreendimento,
@@ -141,7 +141,7 @@ As informações dos imóveis salvas são as seguintes:
 # VI. BACKUP - CÓPIA DAS IMAGENS DOS IMÓVEIS
 
 As fotos dos imóveis também passam por uma otimização em nosso servidor, e, posteriormente, é replicada para o nosso CDN[^cdn]. <br />
-Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, de cerca de 300ms[^ms] para cerca de 60ms[^ms]. Isso equivale a um ganho de velocidade de 4x em comparação ao CDN[^cdn] do Vista[^vista].
+Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, indo de ~[^~]300ms[^ms] para cerca de ~60ms[^ms]. Isso equivale a um carregamento de imagens 4 vezes mais rápida em comparação ao CDN[^cdn] do Vista[^vista].
 
 # VII. SUPORTE
 
@@ -149,20 +149,13 @@ Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em 
 (43) 99969-6665 <br />
 [michael@leadz.agency](mailto:michael@leadz.agency) <br />
 
-##
-Itens à fazer:
-- [ ] Revisão III
-- [ ] Revisão VI
-- [ ] Desenvolver ferramenta de pesquisa e relatório de leads
-
-
-#### Última Atualização
+### Última Atualização
 11/10/2022
 
 #### NOTAS
-
-[^chatbot]: Chatbot - Sendpulse
+[^chatbot]: [Chatbot - Sendpulse](https://sendpulse.com)
 [^cdn]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 [^cmslead]: CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
 [^ms]: milisegundos
+[^~]: ∼ (aproximação, similaridade, equipolência);
 [^vista]: [NovoVista](http://www.vistasoft.com.br/)
