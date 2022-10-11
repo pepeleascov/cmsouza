@@ -81,6 +81,8 @@ O fluxo de atendimento funciona da seguinte forma:
     4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
+Resumido em um diagrama:
+
 ```mermaid
 stateDiagram
     1: Finalidade do Atendimento
@@ -89,6 +91,7 @@ stateDiagram
     2: Nome do Cliente
     3: Processamento dos Dados
     4: Envio do Lead
+    5: Vista
     direction LR
     
     [*] --> 1
@@ -105,6 +108,7 @@ stateDiagram
     1 --> 2
     2 --> 3
     3 --> 4
+    4 --> 5
 ```
 
 Exemplo de lead enviado através do chatbot:
