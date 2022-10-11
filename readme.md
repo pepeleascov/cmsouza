@@ -90,7 +90,7 @@ O fluxo de atendimento funciona da seguinte forma:
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
 Exemplo de lead enviado através do chatbot:
-
+```json
     nome: --nome do contato--
     fone: 5543#####
     mensagem: Olá! Gostaria de falar com um corretor sobre o imóvel 8746
@@ -98,9 +98,6 @@ Exemplo de lead enviado através do chatbot:
     interesse: Locação
     departamento: 12
     agencia:1
-
-```json
-{"nome":"Barbara","fone":"554391054499","mensagem":"Olá! Estou no site da CMSouza e gostaria de mais informações.","veiculo":"Site-Whatsapp","interesse":"Locação","agencia":"1"}
 ```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
@@ -126,8 +123,8 @@ CDN (Content Delivery Network / Rede de entrega de conteúdo)[^1]
 # VII. SUPORTE
 
 paulo@leadz.agency
-(43) 99969-6665
-michael@leadz.agency
+  (43) 99969-6665
+  michael@leadz.agency
 
 
 #### Última Atualização
