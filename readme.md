@@ -157,6 +157,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 <!-- 
 #### ToDo:
 - [x] Esta documentação
+- [ ] Detalhar o funcionamento do site em si
 - [ ] Interpretação de texto do lead do chatbot para identificar o imóvel de interesse
 - [ ] Criação da ferramenta de relatório de leads recebidos
 -->
