@@ -5,15 +5,15 @@
 [III. SITE](https://github.com/pepeleascov/cmsouza#iii-site)<br />
 [ IV. CHATBOT](https://github.com/pepeleascov/cmsouza#iv-chatbot)<br />
 [  V. BACKUP - IMÓVEIS](https://github.com/pepeleascov/cmsouza#v-backup---c%C3%B3pia-do-banco-de-im%C3%B3veis)<br />
-[ VI. OTIMIZAÇÃO - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
-[VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
-[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vi-backup---c%C3%B3pia-das-imagens-dos-im%C3%B3veis)<br />
+[ VI. OTIMIZAÇÃO - IMAGENS](https://github.com/pepeleascov/cmsouza#vi-c%C3%B3pia-e-otimiza%C3%A7%C3%A3o-das-imagens-dos-im%C3%B3veis)<br />
+[VII. SUPORTE](https://github.com/pepeleascov/cmsouza#vii-suporte)<br />
+[ IV. NOTAS](https://github.com/pepeleascov/cmsouza#vii-suporte)<br />
 
 --------
 
 # I. ESCOPO DESTA DOCUMENTAÇÃO
 
-Detalha o funcionamento e configuração dos portais de imóveis, campos de entrada de lead do site, funcionamento e integração do chatbot[^chatbot], backup do banco de dados dos imóveis e do funcionamento da cópia das imagens dos imóveis para o CDN da Leadz[^cdn].
+Detalha o funcionamento e configuração da integração dos portais de imóveis com o Vista[^vista], campos de entrada de lead através do site, funcionamento e integração do chatbot[^chatbot], backup do banco de dados dos imóveis e do funcionamento da otimização das imagens dos imóveis para o CDN da Leadz[^cdn].
 
 # II. PORTAIS
 
@@ -57,11 +57,11 @@ Os contatos de agendamento de horário para visitação entram para a roleta de 
 
 Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
 
-Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot[^chatbot] (detalhado na seção seguinte) e entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem enviada pelo cliente incluída no campo "mensagem".
+Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot[^chatbot] (detalhado na seção seguinte), entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem enviada pelo cliente incluída no campo "mensagem".
 
 # IV. CHATBOT
 
-Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse", utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista]. <br />
+Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse"[^chatbot], utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista]. <br />
 Para os contatos provenientes dos portais, nosso sistema identifica os links dentro das mensagens e classifica a mídia de origem de acordo com o link do portal.
 Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados para a roleta de atendimento com uma das seguintes mídias de origem:
 
@@ -70,17 +70,17 @@ Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados p
     ChavesNaMão-Whatsapp
 
 Os outros contatos provenientes da opção "Atendimento por WhatsApp" da barra de contatos do site da CMSouza são classificados com a mídia de origem "Site-Whatsapp". <br />
-O nosso sistema, em conjunto com o chatbot, armazena as mensagens recebidas durante a interação do chat e ao final as envia no campo "mensagem" do lead a ser cadastrado na roleta de atendimento.
+O nosso sistema, em conjunto com o chatbot[^chatbot], armazena as mensagens recebidas durante a interação do chat e ao final as envia no campo "mensagem" do lead a ser cadastrado na roleta de atendimento.
 
 O fluxo de atendimento funciona da seguinte forma:
 
     1. Início do atendimento
     2. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
     3. Usuário responde o nome
-    4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome
+    4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome"
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
-Resumido em um diagrama:
+Diagrama:
 
 ```mermaid
 stateDiagram
@@ -122,7 +122,8 @@ departamento: 12
 agencia:1
 ```
 
-*O imóvel de interesse, neste caso, não é enviado separadamente para o Vista[^vista]
+*O imóvel de interesse, neste caso, não é enviado ao o Vista[^vista]. <br />
+Ver nota[^imovel]: Sendo implementado, não será necessário perguntar a finalidade do atendimento, uma vez que com o código do imóvel conseguimos programar o servidor para pesquisar o referido imóvel no Vista e alimentar o lead com as informações antes de fazer o envio à roleta de atendimento.
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
@@ -141,7 +142,8 @@ As informações dos imóveis que são salvas são as seguintes:
 # VI. CÓPIA E OTIMIZAÇÃO DAS IMAGENS DOS IMÓVEIS
 
 As fotos dos imóveis também passam por uma otimização em nosso servidor, e, posteriormente, é replicada para o nosso CDN[^cdn]. <br />
-Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, indo de ~300ms[^~] [^ms] para cerca de ~60ms[^ms]. Isso equivale a um carregamento de imagens 4 vezes mais rápida em comparação ao CDN[^cdn] do Vista[^vista].
+Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, indo de ~300ms[^~] [^ms] para cerca de ~60ms[^ms]. Isso equivale a um carregamento de imagens 4 vezes mais rápida em comparação ao CDN[^cdn] do Vista[^vista]. <br />
+O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, além de tornar o carregamento das imagens do site da CMSouza mais rápido, é torná-lo independente do Novo Vista, evitando assim, os períodos de instabilidade que já enfrentamos.
 
 # VII. SUPORTE
 
@@ -152,10 +154,16 @@ Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em 
 ### Última Atualização
 11/10/2022
 
+### ToDo:
+[x] Esta documentação
+[ ] Interpretação de texto do lead do chatbot para identificar o imóvel de interesse
+[ ] Criação da ferramenta de relatório de leads recebidos
+
 #### NOTAS
 [^chatbot]: [Chatbot - Sendpulse](https://sendpulse.com)
 [^cdn]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 [^cmslead]: CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
 [^ms]: milisegundos
+[^imovel]: Há essa possibilidade, mas será necessário adicionar uma etapa de interpretação de mensagem para identificar o imóvel.
 [^~]: ∼ (aproximação, similaridade, equipolência);
 [^vista]: [NovoVista](http://www.vistasoft.com.br/)
