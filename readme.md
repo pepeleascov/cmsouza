@@ -154,10 +154,12 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 ### Última Atualização
 11/10/2022
 
+<!-- 
 #### ToDo:
 - [x] Esta documentação
 - [ ] Interpretação de texto do lead do chatbot para identificar o imóvel de interesse
 - [ ] Criação da ferramenta de relatório de leads recebidos
+-->
 
 #### NOTAS
 [^chatbot]: [Chatbot - Sendpulse](https://sendpulse.com)
