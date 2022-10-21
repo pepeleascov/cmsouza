@@ -165,7 +165,6 @@ As informações dos imóveis que são salvas são as seguintes:
     DescricaoEmpreendimento, Imediacoes, DestaqueWeb, SuperDestaqueWeb, Lancamento, Tour360, 
     Corretor, TotalBanheiros, Suites, Endereco, Numero, UF, FotoDestaque
 
-
 --------
 
 # VI. CÓPIA E OTIMIZAÇÃO DAS IMAGENS DOS IMÓVEIS
