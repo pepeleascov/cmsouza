@@ -66,11 +66,13 @@ Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de conta
 
 
 - Trabalhe Conosco:
+
 O cadastro do currículo captado pela página é enviado para o e-mail "contato@cmsouza.com.br" com os seguintes dados:
 Assunto: Novo Currículo
 As informações de Nome, E-mail e Telefone vão no corpo do e-mail com o currículo anexo
 
 - Anuncie seu Imóvel:
+
 As informações captadas nesta página são direcionadas à roleta de atendimento e direcionado ao departamento de acordo com o interesse selecionado. Este contato vai com a mensagem "Tenho interesse em anunciar meu imóvel" cadastrada no lead.
 
 # IV. CHATBOT
