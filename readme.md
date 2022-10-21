@@ -47,7 +47,7 @@ Caso seja necessária a integração de um novo portal, favor fazer a solicitaç
 
 # III. SITE
 
-As entradas de lead através do site são:
+As entradas de lead através do site são as seguintes:
 
 - Página do imóvel - Agendamento de Visitas:
 
@@ -65,6 +65,8 @@ Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de conta
 - [x] Exibir no Site
 - [x] Lançamento
 
+
+### Sobre as páginas de cadastro
 
 - Trabalhe Conosco:
 
