@@ -152,7 +152,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 [michael@leadz.agency](mailto:michael@leadz.agency) <br />
 
 ### Última Atualização
-11/10/2022
+21/10/2022
 
 <!-- 
 #### ToDo:
