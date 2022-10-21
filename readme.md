@@ -59,6 +59,11 @@ Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de con
 
 Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot[^chatbot] (detalhado na seção seguinte), entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem enviada pelo cliente incluída no campo "mensagem".
 
+**Configurando os imóveis na categoria "Exclusividade Vectra Construtora":**
+É necessário que o EMPREENDIMENTO esteja configurado no CRM e com os checkboxes **"Exibir no Site"** e **"Exclusividade"** marcados.
+- [x] Exibir no Site
+- [x] Lançamento
+
 # IV. CHATBOT
 
 Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse"[^chatbot], utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista]. <br />
