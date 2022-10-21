@@ -15,7 +15,7 @@
 
 Detalha o funcionamento e configuração da integração dos portais de imóveis com o Vista[^vista], campos de entrada de lead através do site, funcionamento e integração do chatbot[^chatbot], backup do banco de dados dos imóveis e do funcionamento da otimização das imagens dos imóveis para o CDN da Leadz[^cdn].
 
---------
+
 
 # II. PORTAIS
 
@@ -47,7 +47,7 @@ Os portais integrados são informados ao Vista[^vista] com as seguintes mídias 
 
 Caso seja necessária a integração de um novo portal, favor fazer a solicitação através do e-mail: paulo@leadz.agency
 
---------
+
 
 # III. SITE
 
@@ -82,7 +82,7 @@ As informações de Nome, E-mail e Telefone vão no corpo do e-mail com o currí
 
 As informações captadas nesta página são direcionadas à roleta de atendimento e direcionado ao departamento de acordo com o interesse selecionado. Este contato vai com a mensagem "Tenho interesse em anunciar meu imóvel" cadastrada no lead.
 
---------
+
 
 # IV. CHATBOT
 
@@ -150,7 +150,7 @@ agencia:1
 *O imóvel de interesse, neste caso, não é enviado ao o Vista[^vista]. <br />
 Ver nota[^imovel]: Sendo implementado, não será necessário perguntar a finalidade do atendimento, uma vez que com o código do imóvel conseguimos programar o servidor para pesquisar o referido imóvel no Vista e alimentar o lead com as informações antes de fazer o envio à roleta de atendimento.
 
---------
+
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
@@ -165,7 +165,7 @@ As informações dos imóveis que são salvas são as seguintes:
     DescricaoEmpreendimento, Imediacoes, DestaqueWeb, SuperDestaqueWeb, Lancamento, Tour360, 
     Corretor, TotalBanheiros, Suites, Endereco, Numero, UF, FotoDestaque
 
---------
+
 
 # VI. CÓPIA E OTIMIZAÇÃO DAS IMAGENS DOS IMÓVEIS
 
@@ -173,7 +173,7 @@ As fotos dos imóveis também passam por uma otimização em nosso servidor, e, 
 Com isso, reduzimos o tempo médio de carregamento de cada imagem do imóvel em aproximadamente 80%, indo de ~300ms[^~] [^ms] para cerca de ~60ms[^ms]. Isso equivale a um carregamento de imagens 4 vezes mais rápida em comparação ao CDN[^cdn] do Vista[^vista]. <br />
 O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, além de tornar o carregamento das imagens do site da CMSouza mais rápido, é torná-lo independente do Novo Vista, evitando assim, os períodos de instabilidade que já passamos.
 
---------
+
 
 # VII. SUPORTE
 
