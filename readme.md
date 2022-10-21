@@ -59,10 +59,18 @@ Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de con
 
 Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot[^chatbot] (detalhado na seção seguinte), entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem enviada pelo cliente incluída no campo "mensagem".
 
-**Configurando os imóveis na categoria "Exclusividade Vectra Construtora":**
-É necessário que o EMPREENDIMENTO esteja configurado no CRM e com os checkboxes **"Exibir no Site"** e **"Exclusividade"** marcados.
+- Configurando os imóveis na categoria "Exclusividade Vectra Construtora":
+É necessário que o EMPREENDIMENTO esteja cadastrado no CRM na categoria **EMPREENDIMENTO** e com os checkboxes **"Exibir no Site"** e **"Exclusividade"** marcados. Os **EMPREENDIMENTOS** não são exibidos na pesquisa de **IMÓVEIS.**
 - [x] Exibir no Site
 - [x] Lançamento
+
+- Trabalhe Conosco
+O cadastro do currículo captado pela página é enviado para o e-mail "contato@cmsouza.com.br" com os seguintes dados:
+Assunto: Novo Currículo
+As informações de Nome, E-mail e Telefone vão no corpo do e-mail com o currículo anexo
+
+- Anuncie seu Imóvel
+As informações captadas nesta página são direcionadas à roleta de atendimento e direcionado ao departamento de acordo com o interesse selecionado. Este contato vai com a mensagem "Tenho interesse em anunciar meu imóvel" cadastrada no lead.
 
 # IV. CHATBOT
 
