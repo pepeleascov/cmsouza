@@ -198,7 +198,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 [^cmslead]: CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
 [^ms]: milisegundos
 [^imovel]: Há essa possibilidade, mas será necessário adicionar uma etapa de interpretação de mensagem para identificar o imóvel.
-[^~]: ∼ (aproximação, similaridade, equipolência);
+[^~]: ∼ (aproximação, similaridade, equipolência)
 [^vista]: [NovoVista](http://www.vistasoft.com.br/)
 [^trabalhe]: [Trabalhe Conosco](https://www.cmsouza.com.br/trabalhe-conosco)
 [^anuncie]: [Anuncie seu imóvel](https://www.cmsouza.com.br/anuncie-seu-imovel)
