@@ -182,7 +182,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 [michael@leadz.agency](mailto:michael@leadz.agency) <br />
 
 ### Última Atualização
-21/10/2022
+20/01/2023
 
 <!-- 
 #### ToDo:
@@ -190,6 +190,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 - [ ] Detalhar o funcionamento do site em si
 - [ ] Interpretação de texto do lead do chatbot para identificar o imóvel de interesse
 - [ ] Criação da ferramenta de relatório de leads recebidos
+- [ ] Detalhar imagens para página de empreendimentos
 -->
 
 #### NOTAS
