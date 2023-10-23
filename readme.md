@@ -100,8 +100,8 @@ O nosso sistema, em conjunto com o chatbot[^chatbot], armazena as mensagens rece
 O fluxo de atendimento funciona da seguinte forma:
 
     1. Início do atendimento
-    2. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
-    3. Usuário responde o nome
+    2. No caso de não ter um imóvel informado, o servidor inicia o fluxo de perguntas para o usuário
+    3. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
     4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome"
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
@@ -148,8 +148,6 @@ agencia:1
 ```
 
 *O imóvel de interesse, neste caso, não é enviado ao o Vista[^vista]. <br />
-Ver nota[^imovel]: Sendo implementado, não será necessário perguntar a finalidade do atendimento, uma vez que com o código do imóvel conseguimos programar o servidor para pesquisar o referido imóvel no Vista e alimentar o lead com as informações antes de fazer o envio à roleta de atendimento.
-
 
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
@@ -182,7 +180,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 [michael@leadz.agency](mailto:michael@leadz.agency) <br />
 
 ### Última Atualização
-20/01/2023
+23/10/2023
 
 <!-- 
 #### ToDo:
@@ -201,7 +199,6 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 [^cdn]: CDN - Content Delivery Network / Rede de entrega de conteúdo
 [^cmslead]: CMSLEAD - Sistema criado para recebimento e interpretação dos e-mails de portais
 [^ms]: milisegundos
-[^imovel]: Há essa possibilidade, mas será necessário adicionar uma etapa de interpretação de mensagem para identificar o imóvel.
 [^~]: ∼ (aproximação, similaridade, equipolência)
 [^vista]: [NovoVista](http://www.vistasoft.com.br/)
 [^trabalhe]: [Trabalhe Conosco](https://www.cmsouza.com.br/trabalhe-conosco)
