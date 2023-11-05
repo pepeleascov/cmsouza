@@ -191,7 +191,7 @@ stateDiagram
     3 --> 4
     4 --> 5
     5 --> 6
-    6 --> 7
+    6 --> Vista
 ```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
