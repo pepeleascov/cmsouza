@@ -170,7 +170,6 @@ stateDiagram
     4: Nome do Cliente captado automaticamente
     5: Processamento dos Dados
     6: Envio do Lead
-    7: Vista
     direction LR
     
     Início --> 1
