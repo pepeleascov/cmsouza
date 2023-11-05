@@ -161,7 +161,7 @@ O fluxo de atendimento no caso de ter um código de imóvel informado funciona d
 Diagrama:
 
 ```mermaid
-flowchart LR
+state flowchart LR
 id1(Reconhecimento
 do imóvel) --> 2[(Pesquisa
 no CRM)] --> Venda & Locação --> id2(Nome do
