@@ -181,6 +181,18 @@ stateDiagram
     3 --> 4
     4 --> 5
 ```
+Exemplo de lead enviado através do chatbot com imóvel reconhecido:
+
+```
+nome: --nome do contato--
+fone: 5543#####
+mensagem: Olá! Gostaria de mais informações sobre o imóvel 1234.
+veiculo: Site-Whatsapp
+anuncio: 1234
+interesse: Locação
+departamento: 12
+agencia:1
+```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
