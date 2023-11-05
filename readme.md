@@ -161,36 +161,14 @@ O fluxo de atendimento no caso de ter um código de imóvel informado funciona d
 Diagrama:
 
 ```mermaid
-stateDiagram
-    1: Reconhecimento do imóvel
-    2: Pesquisa no CRM[(Database)]
-    3: Identificação automática da finalidade
-    v: Venda
-    l: Locação
-    4: Nome do Cliente captado automaticamente
-    5: Processamento dos Dados
-    6: Envio do Lead
-    direction LR
-    
-    Início --> 1
-    1 --> 2
-    2 --> 3
-    state 3 {
-    state fork_state <<fork>>
-    direction LR
-        fork_state
-        fork_state --> v
-        fork_state --> l
-    state join_state <<join>>
-    v --> join_state
-    l --> join_state
-    }
-    1 --> 2
-    2 --> 3
-    3 --> 4
-    4 --> 5
-    5 --> 6
-    6 --> Vista
+flowchart LR
+id1(Reconhecimento
+do imóvel) --> 2[(Pesquisa
+no CRM)] --> Venda & Locação --> id2(Nome do
+Cliente captado
+automaticamente) --> id3((Processamento
+dos Dados)) --> id4(Envio
+do Lead)
 ```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
