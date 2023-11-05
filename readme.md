@@ -174,7 +174,8 @@ stateDiagram
     direction LR
     
     Início --> 1
-    state 1 {
+    1 --> 2
+    state 3 {
     state fork_state <<fork>>
     direction LR
         fork_state
