@@ -162,13 +162,15 @@ Diagrama:
 
 ```mermaid
 stateDiagram
-    1: Finalidade do Atendimento
+    1: Reconhecimento do imóvel
+    2: Pesquisa no CRM
+    3: Identificação automática da finalidade
     v: Venda
     l: Locação
-    2: Nome do Cliente captado automaticamente
-    3: Processamento dos Dados
-    4: Envio do Lead
-    5: Vista
+    4: Nome do Cliente captado automaticamente
+    5: Processamento dos Dados
+    6: Envio do Lead
+    7: Vista
     direction LR
     
     Início --> 1
