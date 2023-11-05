@@ -163,7 +163,7 @@ Diagrama:
 ```mermaid
 stateDiagram
     1: Reconhecimento do imóvel
-    2: Pesquisa no CRM
+    2: Pesquisa no CRM[(Database)]
     3: Identificação automática da finalidade
     v: Venda
     l: Locação
