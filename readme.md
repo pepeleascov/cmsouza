@@ -162,22 +162,24 @@ Diagrama:
 
 ```mermaid
 stateDiagram
-    1: Reconhecimento do imóvel
+    
+    1: IA - Identificação
+    1: Nome
+    1: Telefone
+    1: Imóvel de interesse
     2: Pesquisa no CRM
-    3: Identificação automática da finalidade
+    3: Identificação de finalidade
     v: Venda
     l: Locação
-    4: Nome do Cliente captado automaticamente
-    5: Processamento dos Dados
-    6: Envio do Lead
-    direction LR
+    4: Processamento dos Dados
+    5: Envio do Lead
+    direction tb
     
-    Início --> 1
     1 --> 2
     2 --> 3
     state 3 {
     state fork_state <<fork>>
-    direction LR
+    direction TB
         fork_state
         fork_state --> v
         fork_state --> l
@@ -185,12 +187,8 @@ stateDiagram
     v --> join_state
     l --> join_state
     }
-    1 --> 2
-    2 --> 3
     3 --> 4
     4 --> 5
-    5 --> 6
-    6 --> Vista
 ```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
