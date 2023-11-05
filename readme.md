@@ -175,6 +175,7 @@ stateDiagram
     
     Início --> 1
     1 --> 2
+    2 --> 3
     state 3 {
     state fork_state <<fork>>
     direction LR
@@ -189,6 +190,8 @@ stateDiagram
     2 --> 3
     3 --> 4
     4 --> 5
+    5 --> 6
+    6 --> 7
 ```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
