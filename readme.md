@@ -132,8 +132,7 @@ Exemplo de lead enviado através do chatbot:
 ```
 nome: --nome do contato--
 fone: 5543#####
-mensagem: Olá! Gostaria de falar com um corretor sobre o imóvel 8746
-anuncio: 8746
+mensagem: Olá! Estou no site da CMSouza e gostaria de mais informações.
 veiculo: Site-Whatsapp
 interesse: Locação
 departamento: 12
@@ -145,9 +144,9 @@ agencia:1
 O fluxo de atendimento no caso de ter um código de imóvel informado funciona da seguinte forma:
 
     1. Início do atendimento
-    2. No caso de não ter um código de imóvel informado, o servidor inicia o fluxo de perguntas para o usuário
-    3. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
-    4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome"
+    2. O servidor interpreta a mensagem enviada pelo cliente e identifica o código do imóvel informado
+    3. O servidor capta automaticamente o nome e telefone do contato
+    4. O servidor faz uma pesquisa ao CRM para identificar o imóvel e a finalidade (Venda ou Locação)
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
 
 Diagrama:
