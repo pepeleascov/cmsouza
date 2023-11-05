@@ -25,10 +25,10 @@ Exemplo de lead interpretado e enviado para o Vista[^vista]:
 
     agencia: 1
     veiculo: GrupoZap
-    mensagem:  Tenho interesse em visitar  
+    mensagem:  --conteúdo do e-mail--  
     nome: --nome do contato--
-    fone: (43) 991##-####
-    email: yohh.###@hotmail.com
+    fone: (43) 99###-####
+    email: e-mail do contato
     anuncio: 7230
     interesse: locação
     departamento: 12
@@ -97,10 +97,10 @@ Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados p
 Os outros contatos provenientes da opção "Atendimento por WhatsApp" da barra de contatos do site da CMSouza são classificados com a mídia de origem "Site-Whatsapp". <br />
 O nosso sistema, em conjunto com o chatbot[^chatbot], armazena as mensagens recebidas durante a interação do chat e ao final as envia no campo "mensagem" do lead a ser cadastrado na roleta de atendimento.
 
-O fluxo de atendimento funciona da seguinte forma:
+O fluxo de atendimento no caso de não ter um código de imóvel informado funciona da seguinte forma:
 
     1. Início do atendimento
-    2. No caso de não ter um imóvel informado, o servidor inicia o fluxo de perguntas para o usuário
+    2. No caso de não ter um código de imóvel informado, o servidor inicia o fluxo de perguntas para o usuário
     3. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
     4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome"
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
@@ -112,7 +112,7 @@ stateDiagram
     1: Finalidade do Atendimento
     v: Venda
     l: Locação
-    2: Nome do Cliente
+    2: Nome do Cliente captado automaticamente
     3: Processamento dos Dados
     4: Envio do Lead
     5: Vista
@@ -141,6 +141,7 @@ Exemplo de lead enviado através do chatbot:
 nome: --nome do contato--
 fone: 5543#####
 mensagem: Olá! Gostaria de falar com um corretor sobre o imóvel 8746
+anuncio: 8746
 veiculo: Site-Whatsapp
 interesse: Locação
 departamento: 12
@@ -149,6 +150,43 @@ agencia:1
 
 *O imóvel de interesse, neste caso, não é enviado ao o Vista[^vista]. <br />
 
+O fluxo de atendimento no caso de ter um código de imóvel informado funciona da seguinte forma:
+
+    1. Início do atendimento
+    2. No caso de não ter um código de imóvel informado, o servidor inicia o fluxo de perguntas para o usuário
+    3. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
+    4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome"
+    5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
+
+Diagrama:
+
+```mermaid
+stateDiagram
+    1: Finalidade do Atendimento
+    v: Venda
+    l: Locação
+    2: Nome do Cliente captado automaticamente
+    3: Processamento dos Dados
+    4: Envio do Lead
+    5: Vista
+    direction LR
+    
+    Início --> 1
+    state 1 {
+    state fork_state <<fork>>
+    direction LR
+        fork_state
+        fork_state --> v
+        fork_state --> l
+    state join_state <<join>>
+    v --> join_state
+    l --> join_state
+    }
+    1 --> 2
+    2 --> 3
+    3 --> 4
+    4 --> 5
+```
 
 # V. BACKUP - CÓPIA DO BANCO DE IMÓVEIS
 
@@ -180,7 +218,7 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 [michael@leadz.agency](mailto:michael@leadz.agency) <br />
 
 ### Última Atualização
-23/10/2023
+06/11/2023
 
 <!-- 
 #### ToDo:
