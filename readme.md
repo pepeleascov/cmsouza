@@ -109,30 +109,22 @@ Diagrama:
 
 ```mermaid
 stateDiagram
-    1: Finalidade do Atendimento
-    v: Venda
-    l: Locação
-    2: Nome do Cliente captado automaticamente
+    
+    1: Identificação Automática
+    1: Nome
+    1: Telefone
+    2: Seleção de Finalidade
+    2: Corretor de
+    2: Venda ou
+    2: Locação
+    2: Administrativo
     3: Processamento dos Dados
     4: Envio do Lead
-    5: Vista
-    direction LR
+    direction tb
     
-    Início --> 1
-    state 1 {
-    state fork_state <<fork>>
-    direction LR
-        fork_state
-        fork_state --> v
-        fork_state --> l
-    state join_state <<join>>
-    v --> join_state
-    l --> join_state
-    }
     1 --> 2
     2 --> 3
     3 --> 4
-    4 --> 5
 ```
 
 Exemplo de lead enviado através do chatbot:
