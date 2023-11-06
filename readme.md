@@ -219,25 +219,14 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 
 # VII. SUPORTE
 
-Via ticket de atendimento, para [cmsouza@leadzsoftware.zohodesk.com](mailto:cmsouza@leadzsoftware.zohodesk.com)
+Via ticket de atendimento, para [cmsouza@leadzsoftware.zohodesk.com](mailto:cmsouza@leadzsoftware.zohodesk.com) <br />
+
 [paulo@leadz.software](mailto:paulo@leadz.software) <br />
 (43) 99969-6665 <br />
 [michael@leadz.software](mailto:michael@leadz.software) <br />
 
 ### Última Atualização
 06/11/2023
-
-<!-- 
-#### ToDo:
-- [x] Esta documentação
-- [ ] Detalhar o funcionamento do site em si
-- [ ] Interpretação de texto do lead do chatbot para identificar o imóvel de interesse
-- [ ] Criação da ferramenta de relatório de leads recebidos
-- [ ] Detalhar imagens para página de empreendimentos
-
-
-
--->
 
 #### NOTAS
 [^chatbot]: [Chatbot - Sendpulse](https://sendpulse.com)
