@@ -45,7 +45,7 @@ Os portais integrados são informados ao Vista[^vista] com as seguintes mídias 
 - VivaReal
 - ChavesNaMão
 
-Caso seja necessária a integração de um novo portal, favor fazer a solicitação através do e-mail: paulo@leadz.agency
+Caso seja necessária a integração de um novo portal, favor fazer a solicitação através de um ticket de atendimento.
 
 
 
@@ -53,13 +53,11 @@ Caso seja necessária a integração de um novo portal, favor fazer a solicitaç
 
 As entradas de lead através do site são as seguintes:
 
-- Página do imóvel - Agendamento de Visitas:
+- Página do imóvel - Quero mais informações:
 
-Os contatos de agendamento de horário para visitação entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site" e com o horário preenchido pelo cliente no campo "Mensagem".
+As solicitações de contato entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site", contendo o Nome, Telefone e Imóvel de Interesse.
 
 - Barra de contatos:
-
-Os contatos provenientes da opção "Enviar e-mail para CMSouza" na barra de contatos entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site" e com a mensagem preenchida pelo cliente no campo "Mensagem". Este lead será direcionado ao departamento de acordo com a seleção da finalidade do contato, sendo ela "Venda" ou "Locação".
 
 Os contatos provenientes da opção "Atendimento por WhatsApp" na barra de contatos redirecionam o cliente para o atendimento através do chatbot[^chatbot] (detalhado na seção seguinte), entram para a roleta de atendimento do Vista[^vista] com a mídia de origem definida como "Site-Whatsapp", e com a mensagem enviada pelo cliente incluída no campo "mensagem".
 
@@ -80,13 +78,12 @@ As informações de Nome, E-mail e Telefone vão no corpo do e-mail com o currí
 
 - Anuncie seu Imóvel[^anuncie]:
 
-As informações captadas nesta página são direcionadas à roleta de atendimento e direcionado ao departamento de acordo com o interesse selecionado. Este contato vai com a mensagem "Tenho interesse em anunciar meu imóvel" cadastrada no lead.
-
+As informações captadas nesta página são direcionadas à roleta de atendimento e direcionado ao departamento de acordo com o interesse selecionado. Este contato vai com a mensagem "Gostaria de anunciar meu imóvel no seu site." e com a mídia de origem "Anuncie seu Imóvel - Site" cadastrada no lead.
 
 
 # IV. CHATBOT
 
-Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse"[^chatbot], utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista]. <br />
+Nosso sistema (Leadz) atua em conjunto com o serviço contratado "Sendpulse"[^chatbot], utilizando o chatbot como forma de entrada de dados. O chatbot faz a interação com o usuário durante o atendimento dos leads no WhatsApp, onde posteriormente nosso sistema os envia para a roleta de atendimento do Vista[^vista] com a mídia de origem "Site-Whatsapp". <br />
 Para os contatos provenientes dos portais, nosso sistema identifica os links dentro das mensagens e classifica a mídia de origem de acordo com o link do portal.
 Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados para a roleta de atendimento com uma das seguintes mídias de origem:
 
@@ -97,10 +94,10 @@ Dessa forma, os leads dos portais atendidos através do WhatsApp são enviados p
 Os outros contatos provenientes da opção "Atendimento por WhatsApp" da barra de contatos do site da CMSouza são classificados com a mídia de origem "Site-Whatsapp". <br />
 O nosso sistema, em conjunto com o chatbot[^chatbot], armazena as mensagens recebidas durante a interação do chat e ao final as envia no campo "mensagem" do lead a ser cadastrado na roleta de atendimento.
 
-O fluxo de atendimento no caso de não ter um código de imóvel informado funciona da seguinte forma:
+O fluxo de atendimento quando não tem um código de imóvel informado funciona da seguinte forma:
 
-    1. Início do atendimento
-    2. No caso de não ter um código de imóvel informado, o servidor inicia o fluxo de perguntas para o usuário
+    1. Início do atendimento e interpretação da primeira mensagem enviada pelo usuário.
+    2. O servidor inicia o fluxo de perguntas para o usuário de acordo com a primeira mensagem
     3. Usuário seleciona a finalidade do atendimento, que indica a informação do departamento
     4. O processamento dos dados é iniciado assim que o servidor recebe a resposta do "nome"
     5. Após, o nosso sistema faz o envio do lead para a roleta do Vista
