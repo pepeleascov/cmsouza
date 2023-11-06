@@ -171,12 +171,12 @@ stateDiagram
     direction TB
         fork_state
         fork_state --> v
-        fork_state --> l
         fork_state --> vl
+        fork_state --> l
     state join_state <<join>>
     v --> join_state
-    l --> join_state
     vl --> join_state
+    l --> join_state
     }
     3 --> 4
     4 --> 5
@@ -219,9 +219,10 @@ O objetivo desta otimização e posterior entrega das imagens ao CDN da Leadz, a
 
 # VII. SUPORTE
 
-[paulo@leadz.agency](mailto:paulo@leadz.agency) <br />
+Via ticket de atendimento, para [cmsouza@leadzsoftware.zohodesk.com](mailto:cmsouza@leadzsoftware.zohodesk.com)
+[paulo@leadz.software](mailto:paulo@leadz.software) <br />
 (43) 99969-6665 <br />
-[michael@leadz.agency](mailto:michael@leadz.agency) <br />
+[michael@leadz.software](mailto:michael@leadz.software) <br />
 
 ### Última Atualização
 06/11/2023
