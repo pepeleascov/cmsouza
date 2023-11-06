@@ -159,6 +159,7 @@ stateDiagram
     3: Identificação de finalidade
     v: Venda
     l: Locação
+    vl: Venda ou Locação
     4: Processamento dos Dados
     5: Envio do Lead
     direction tb
@@ -171,9 +172,11 @@ stateDiagram
         fork_state
         fork_state --> v
         fork_state --> l
+        fork_state --> vl
     state join_state <<join>>
     v --> join_state
     l --> join_state
+    vl --> join_state
     }
     3 --> 4
     4 --> 5
