@@ -110,7 +110,7 @@ Diagrama:
 ```mermaid
 stateDiagram
     
-    1: Identificação Automática
+    1: IA - Identificação
     1: Nome
     1: Telefone
     2: Seleção de Finalidade
